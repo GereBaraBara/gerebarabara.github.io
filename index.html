@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="media/Recurso 1.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>Alpha Beta</title>
+</head>
+<body>
+    <div class="uno" id="uno">
+        <header class="cabeza">
+        <div class="headizq"><a href="index.html"><span style="color: #c3a35b; font-size: 20px; font-family: 'Alfa Slab One', cursive;">Alpha </span>Beta</a></div>
+        <div class="headder">
+            <nav>
+                <ul><a href="index.html">PORTAFOLIO</a></ul>
+                <ul><a href="index.html">CONTACTANOS</a></ul>
+                <label for="btn-menu"><span class="material-symbols-outlined" style="font-size: xx-large; color: white;">menu</span></label>
+            </nav>
+        </div>
+        </header>
+    </div>
+    <div class="dos"><h1 class="titulo_g">TU EMPRESA DE MARKETING DIGITAL</h1></div>
+    <div class="capa"></div>
+    <div class="tres"></div>
+    <div class="cuatro"></div>
+    <div class="cinco"></div>
+    <div class="seis"></div>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.getElementById("uno");
+            header.classList.toggle("abajo",window.scrollY>1);
+        })
+    </script>
+<input type="checkbox" id="btn-menu">
+<div class="cont_menu">
+    <div class="menu">
+        <label for="btn-menu" class="icon-equis"><h1>X</h1></label>
+        <nav>
+            <ul><a href="#">PORTAFOLIO</a></ul>
+            <ul><a href="#">CONTACTANOS</a></ul>
+            <ul><a href="#">NUESTROS PROYECTOS</a></ul>
+            <ul><a href="#">OBJETIVO</a></ul>
+        </nav>
+    </div>
+</div>
+</body>
+</html>
