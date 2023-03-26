@@ -5,18 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="media/Recurso 1.ico">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/ab.ico">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Alpha Beta</title>
 </head>
 <body>
     <div class="uno" id="uno">
         <header class="cabeza">
-        <div class="headizq"><a href="index.html"><span style="color: #c3a35b; font-size: 20px; font-family: 'Alfa Slab One', cursive;">Alpha </span>Beta</a></div>
+        <div class="headizq"><a href="index.html"><span style="color: #c3a35b; font-size: 30px; font-family: 'Anton', sans-serif">Alpha </span>Beta</a></div>
         <div class="headder">
             <nav>
-                <ul><a href="index.html">PORTAFOLIO</a></ul>
-                <ul><a href="index.html">CONTACTANOS</a></ul>
                 <label for="btn-menu"><span class="material-symbols-outlined" style="font-size: xx-large; color: white;">menu</span></label>
             </nav>
         </div>
@@ -24,25 +22,35 @@
     </div>
     <div class="dos"><h1 class="titulo_g">TU EMPRESA DE MARKETING DIGITAL</h1></div>
     <div class="capa"></div>
-    <div class="tres"></div>
+    <video src="images/Video de PERSONAS Trabajando en OFICINA 🎯.mp4" autoplay loop></video>
+    <div class="tres" id="portafolio">
+        <div class="tituloportafolio">
+            <h1>Nuestros proyectos previos</h1>
+        </div>
+        <div class="contenedorcarousel">
+            <div class="carrousel" id="carrousel">
+                <div class="elementos" id="img"><img class="imagenescarousel" src="/images/c.png" alt=""></div>
+                <div class="elementos" id="img"><img class="imagenescarousel" src="/images/b.png" alt=""></div>
+                <div class="elementos" id="img"><img class="imagenescarousel" src="/images/c.png" alt=""></div>
+                <div class="elementos" id="img"><img class="imagenescarousel" src="/images/c.png" alt=""></div>
+                <div class="elementos" id="img"><img class="imagenescarousel" src="/images/b.png" alt=""></div>
+            </div>
+            <button class="flecha1" id="izq">&#60;</button>
+            <button class="flecha2" id="der">&#62;</button>
+        </div>
+        <script src="app.js"></script>
+    </div>
     <div class="cuatro"></div>
     <div class="cinco"></div>
     <div class="seis"></div>
-    <script type="text/javascript">
-        window.addEventListener("scroll", function(){
-            var header = document.getElementById("uno");
-            header.classList.toggle("abajo",window.scrollY>1);
-        })
-    </script>
 <input type="checkbox" id="btn-menu">
 <div class="cont_menu">
     <div class="menu">
         <label for="btn-menu" class="icon-equis"><h1>X</h1></label>
         <nav>
-            <ul><a href="#">PORTAFOLIO</a></ul>
-            <ul><a href="#">CONTACTANOS</a></ul>
-            <ul><a href="#">NUESTROS PROYECTOS</a></ul>
-            <ul><a href="#">OBJETIVO</a></ul>
+            <ul><a href="#portafolio">PORTAFOLIO</a></ul>
+            <ul><a href="#contactanos">CONTACTANOS</a></ul>
+            <ul><a href="#nuestrosproyectos">NUESTROS PROYECTOS</a></ul>
         </nav>
     </div>
 </div>
