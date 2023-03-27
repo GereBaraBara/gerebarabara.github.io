@@ -10,7 +10,7 @@
     <title>Alpha Beta</title>
 </head>
 <body>
-    <div class="uno" id="uno">
+    <div class="uno">
         <header class="cabeza">
         <div class="headizq"><a href="index.html"><span style="color: #735645; font-size: 30px; font-family: 'Anton', sans-serif">Alpha </span>Beta</a></div>
         <div class="headder">
@@ -23,7 +23,8 @@
     <div class="dos"><h1 class="titulo_g">TU EMPRESA DE MARKETING DIGITAL</h1></div>
     <div class="capa"></div>
     <video src="images/Video de PERSONAS Trabajando en OFICINA 🎯.mp4" preload="auto" autoplay muted loop></video>
-    <div class="tres" id="portafolio">
+    <div class="tres">
+        <div id="portafolio"></div>
         <div class="tituloportafolio">
             <h1>Nuestros proyectos previos</h1>
         </div>
@@ -54,5 +55,11 @@
         </nav>
     </div>
 </div>
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector(".titulo_g");
+        header.classList.toggle("abajo",window.scrollY>500);
+    })
+</script>
 </body>
 </html>
